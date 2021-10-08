@@ -101,7 +101,7 @@ export default function Board() {
         </div>
         <p>Player : X</p>
         <p>Computer : O</p>
-        {isWinner && <p>Winner : {isWinner} </p>}
+        {isWinner && <p className="winner">Winner : {isWinner} </p>}
         <button onClick={() => restart()} className="restart-button">
           Restart
         </button>
