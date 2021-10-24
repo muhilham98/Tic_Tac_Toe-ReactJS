@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Cell from "./Cell";
 
 export default function Board() {
-  const [cell, setCell] = useState(Array(9).fill(""));
-  const [finish, setfinish] = useState(false);
-  const [isWinner, isSetWinner] = useState();
-  const [turn, setTurn] = useState(1);
+  const [cell, setCell] = useState(Array(9).fill("")); //state cell
+  const [finish, setfinish] = useState(false); //penentu selesai atau belum
+  const [isWinner, isSetWinner] = useState(); //state winner
+  const [turn, setTurn] = useState(1); //langkah ke-
 
   let emptyArray = [];
 
